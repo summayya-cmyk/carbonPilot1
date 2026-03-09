@@ -1,0 +1,91 @@
+Review the entire landing page for CarbonOps and improve the structure, clarity, and messaging while keeping the current design style and layout.
+
+CarbonOps is a carbon accounting platform designed for ESG consultants and companies to measure emissions, manage carbon data, and generate reports.
+
+Make the following improvements across the page:
+
+1. Improve the hero section
+Refine the headline and description so the value proposition is clearer.
+
+Headline:
+"Carbon Accounting Platform for Consultants and Companies"
+
+Description:
+CarbonOps helps consultants and companies collect activity data, apply emission factors, calculate Scope 1, 2, and 3 emissions, and generate carbon footprint reports — all in one platform.
+
+Keep the two main call-to-action buttons:
+- Request Early Access
+- Explore Features
+
+2. Improve the problem section
+Rename the section title to:
+"Carbon accounting is still spreadsheet-driven"
+
+Explain that most consultants and companies rely on messy spreadsheets, manual calculations, and scattered emission factor databases.
+
+Keep the problem points:
+- Calculation errors and broken formulas
+- Scattered data across departments
+- Outdated emission factors causing inaccuracies
+- Hours spent manually formatting reports
+
+3. Improve the solution section
+Ensure the section clearly explains that CarbonOps replaces spreadsheet-based workflows with a centralized platform that manages carbon accounting in one place.
+
+4. Improve the features section
+Keep the existing features but improve clarity and wording.
+
+Features should include:
+- Multi-client workspace for consultants
+- Emissions dashboard for companies
+- Emission factor engine with region and year tracking
+- Scope 1, 2, and 3 calculation engine
+- CSV and spreadsheet data import
+- Automated carbon footprint reports
+- Audit-ready emission factor traceability
+
+5. Add a new section after features titled:
+"From Measurement to Decarbonisation"
+
+Explain that once emissions are measured, CarbonOps helps identify reduction opportunities.
+
+Include these points:
+- Identify emission hotspots across operations
+- Highlight high-impact reduction opportunities
+- Compare emissions across reporting periods
+- Track progress toward reduction targets
+
+Design this section with feature cards consistent with the rest of the site.
+
+6. Improve the "Built for climate leaders" section
+Clarify the three audiences:
+
+ESG Consultants:
+Manage multiple client carbon inventories and streamline reporting.
+
+Sustainability Advisors:
+Analyze emissions data and support reduction planning.
+
+Companies / SMEs:
+Track emissions internally and collaborate with consultants.
+
+7. Add a small credibility section after the hero explaining that the platform follows widely accepted carbon accounting standards.
+
+Include points such as:
+- Built following GHG Protocol standards
+- Supports Scope 1, Scope 2, and Scope 3 emissions
+- Designed for consultants and sustainability teams
+
+8. Improve the early access section
+Make the call-to-action clearer:
+
+"Join Early Access to CarbonOps"
+
+Explain that the platform is currently being developed and early users can help shape the product.
+
+9. Improve the contact section
+Keep the contact form but clarify that users can ask questions, request demos, or join early access.
+
+10. Ensure the overall tone remains professional and credible for ESG consultants and companies while keeping the clean climate-tech design style with green and neutral colors.
+
+Do not drastically change the layout, but improve the messaging, clarity, and structure across the page.
