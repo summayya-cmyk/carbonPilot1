@@ -79,7 +79,7 @@ export default function Landing() {
               <div className="bg-primary/10 p-2 rounded-xl text-primary">
                 <Leaf className="w-6 h-6" />
               </div>
-              <span className="font-display font-bold text-xl text-foreground">CarbonPilot</span>
+              <span className="font-display font-bold text-xl text-foreground">CarbonIQ</span>
             </div>
             
             {/* Desktop Nav */}
@@ -367,7 +367,7 @@ export default function Landing() {
           >
             <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">One centralized workspace for carbon accounting</h2>
             <p className="text-xl text-background/80 mb-12">
-              CarbonPilot replaces spreadsheet workflows with one workspace for data, factors, calculations, and reporting.
+              CarbonIQ replaces spreadsheet workflows with one workspace for data, factors, calculations, and reporting.
             </p>
           </motion.div>
         </div>
@@ -415,7 +415,7 @@ export default function Landing() {
             <FeatureCard 
               icon={<Globe2 className="w-6 h-6 text-primary" />}
               title="AI-Assisted Emissions Analysis"
-              description="CarbonPilot analyzes emissions data to identify patterns, highlight emission hotspots, and surface potential reduction opportunities based on activity data."
+              description="CarbonIQ analyzes emissions data to identify patterns, highlight emission hotspots, and surface potential reduction opportunities based on activity data."
               delay={0.6}
             />
             <FeatureCard 
@@ -444,7 +444,7 @@ export default function Landing() {
       <section className="py-24 bg-secondary/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">How CarbonPilot fits into your workflow</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">How CarbonIQ fits into your workflow</h2>
             <p className="text-lg text-muted-foreground">A simple process from data collection to reduction planning.</p>
           </div>
 
@@ -486,7 +486,7 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">From measurement to decarbonisation</h2>
-            <p className="text-lg text-muted-foreground">Once emissions are measured, CarbonPilot highlights hotspots and helps identify where reductions may have the most impact.</p>
+            <p className="text-lg text-muted-foreground">Once emissions are measured, CarbonIQ highlights hotspots and helps identify where reductions may have the most impact.</p>
           </div>
 
           <div className="max-w-3xl mx-auto mb-12">
@@ -555,7 +555,7 @@ export default function Landing() {
               Built by Neucem
             </motion.h3>
             <motion.p variants={fadeIn} className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              CarbonPilot is developed by Neucem to help teams run carbon accounting in a structured, scalable way.
+              CarbonIQ is developed by Neucem to help teams run carbon accounting in a structured, scalable way.
             </motion.p>
           </motion.div>
         </div>
@@ -605,7 +605,7 @@ export default function Landing() {
               Join early access
             </h2>
             <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
-              CarbonPilot is currently being developed. Early users help shape the product and get access before the full launch. If you're a consultant or company ready to simplify your carbon accounting, join the waitlist.
+              CarbonIQ is currently being developed. Early users help shape the product and get access before the full launch. If you're a consultant or company ready to simplify your carbon accounting, join the waitlist.
             </p>
 
             <WaitlistForm />
@@ -629,9 +629,9 @@ export default function Landing() {
       <footer className="bg-foreground py-12 text-center text-background/60">
         <div className="flex items-center justify-center gap-2 mb-4">
           <Leaf className="w-5 h-5 text-primary" />
-          <span className="font-display font-bold text-xl text-background">CarbonPilot</span>
+          <span className="font-display font-bold text-xl text-background">CarbonIQ</span>
         </div>
-        <p>© {new Date().getFullYear()} CarbonPilot. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} CarbonIQ. All rights reserved.</p>
       </footer>
     </div>
   );
