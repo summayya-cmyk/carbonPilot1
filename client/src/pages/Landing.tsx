@@ -79,7 +79,7 @@ export default function Landing() {
               <div className="bg-primary/10 p-2 rounded-xl text-primary">
                 <Leaf className="w-6 h-6" />
               </div>
-              <span className="font-display font-bold text-xl text-foreground">CarbonOps</span>
+              <span className="font-display font-bold text-xl text-foreground">CarbonPilot</span>
             </div>
             
             {/* Desktop Nav */}
@@ -141,11 +141,11 @@ export default function Landing() {
             </motion.div>
             
             <motion.h1 variants={fadeIn} className="text-5xl md:text-6xl lg:text-7xl font-display font-extrabold text-foreground tracking-tight leading-[1.1] mb-6">
-              Carbon accounting <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">without spreadsheets</span>
+              AI-powered carbon accounting platform
             </motion.h1>
             
             <motion.p variants={fadeIn} className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-              CarbonOps helps consultants and companies collect activity data, apply emission factors, calculate Scope 1, Scope 2, and Scope 3 emissions, and generate carbon footprint reports — all in one platform.
+              Measure emissions, automate carbon calculations, and uncover decarbonisation opportunities with AI-driven insights.
             </motion.p>
             
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -171,6 +171,66 @@ export default function Landing() {
         {/* Abstract decorative elements */}
         <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl -z-10 mix-blend-multiply"></div>
         <div className="absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4 w-[800px] h-[800px] bg-accent/5 rounded-full blur-3xl -z-10 mix-blend-multiply"></div>
+      </section>
+
+      {/* AI Intelligence Section */}
+      <section className="py-16 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="rounded-3xl border border-primary/15 bg-gradient-to-b from-primary/5 to-background p-8 md:p-10"
+          >
+            <motion.div variants={fadeIn} className="text-center max-w-4xl mx-auto mb-8">
+              <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+                AI-powered carbon intelligence
+              </h3>
+              <p className="text-base sm:text-lg text-muted-foreground">
+                Carbon accounting foundation with a practical intelligence layer.
+              </p>
+            </motion.div>
+            <motion.div variants={fadeIn} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="rounded-xl border border-border bg-card px-4 py-3 text-sm text-muted-foreground flex items-start gap-3">
+                <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <TrendingUp className="w-4 h-4 text-primary" />
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground mb-1">Detect emission hotspots</p>
+                  <p>AI analyzes emissions data across categories to identify the most impactful emission sources.</p>
+                </div>
+              </div>
+              <div className="rounded-xl border border-border bg-card px-4 py-3 text-sm text-muted-foreground flex items-start gap-3">
+                <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Globe2 className="w-4 h-4 text-primary" />
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground mb-1">Identify anomalies</p>
+                  <p>The platform highlights unusual activity data that may require verification.</p>
+                </div>
+              </div>
+              <div className="rounded-xl border border-border bg-card px-4 py-3 text-sm text-muted-foreground flex items-start gap-3">
+                <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <BarChart3 className="w-4 h-4 text-primary" />
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground mb-1">Compare reporting periods</p>
+                  <p>Track emission trends across reporting periods and identify significant changes.</p>
+                </div>
+              </div>
+              <div className="rounded-xl border border-border bg-card px-4 py-3 text-sm text-muted-foreground flex items-start gap-3">
+                <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Zap className="w-4 h-4 text-primary" />
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground mb-1">Surface reduction opportunities</p>
+                  <p>Highlight potential decarbonisation opportunities based on emissions patterns.</p>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
       </section>
 
       {/* Credibility Section */}
@@ -248,20 +308,48 @@ export default function Landing() {
                   </div>
                   <div className="ml-4 text-xs font-mono text-muted-foreground">Emissions_Master_vFINAL_v2.xlsx</div>
                 </div>
-                <div className="p-6 overflow-hidden">
-                  <div className="animate-pulse space-y-4">
-                    <div className="h-8 bg-destructive/10 rounded w-3/4"></div>
-                    <div className="grid grid-cols-4 gap-2">
-                      {[...Array(12)].map((_, i) => (
-                        <div key={i} className={`h-6 rounded ${i % 3 === 0 ? 'bg-destructive/20' : 'bg-muted'} ${i === 5 || i === 7 ? 'border border-destructive' : ''}`}></div>
-                      ))}
-                    </div>
-                    <div className="text-xs text-destructive mt-4 flex items-center gap-1 font-mono">
-                      <span>#REF!</span> Error: Cell reference missing
-                    </div>
+                <div className="p-6 overflow-hidden space-y-3">
+                  <div className="grid grid-cols-5 gap-2">
+                    {["Site", "Fuel", "Travel", "Proc.", "Total"].map((label) => (
+                      <div key={label} className="h-6 rounded bg-muted/80 border border-border text-[10px] text-muted-foreground font-mono flex items-center px-2">
+                        {label}
+                      </div>
+                    ))}
+                  </div>
+                  <div className="grid grid-cols-5 gap-2">
+                    {[...Array(20)].map((_, i) => (
+                      <div
+                        key={i}
+                        className={`h-6 rounded border ${
+                          i === 3 || i === 11
+                            ? "bg-destructive/15 border-destructive/40"
+                            : i === 7 || i === 14
+                              ? "bg-amber-100/70 border-amber-300/80"
+                              : "bg-muted border-border"
+                        }`}
+                      ></div>
+                    ))}
+                  </div>
+                  <div className="text-xs text-muted-foreground mt-2 flex items-center gap-2 font-mono">
+                    <span className="px-2 py-0.5 rounded bg-amber-100 text-amber-700 border border-amber-300">
+                      Manual review needed
+                    </span>
+                    <span className="px-2 py-0.5 rounded bg-muted border border-border">
+                      4 tabs to reconcile
+                    </span>
+                  </div>
+                  <div className="flex gap-2 pt-1">
+                    {["Energy_2024", "Travel_Q4", "Scope3_draft", "Factor_Check"].map((tab) => (
+                      <div key={tab} className="px-2 py-1 rounded-md text-[10px] font-mono bg-muted border border-border text-muted-foreground">
+                        {tab}
+                      </div>
+                    ))}
                   </div>
                 </div>
               </Card>
+              <p className="text-xs text-muted-foreground text-center mt-3">
+                Typical carbon accounting spreadsheet used today
+              </p>
             </motion.div>
           </motion.div>
         </div>
@@ -279,7 +367,7 @@ export default function Landing() {
           >
             <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">One centralized workspace for carbon accounting</h2>
             <p className="text-xl text-background/80 mb-12">
-              CarbonOps replaces spreadsheet-based workflows with a centralized workspace where emissions data, emission factors, and reports can be managed in one place.
+              CarbonPilot replaces spreadsheet workflows with one workspace for data, factors, calculations, and reporting.
             </p>
           </motion.div>
         </div>
@@ -325,22 +413,28 @@ export default function Landing() {
               delay={0.5}
             />
             <FeatureCard 
+              icon={<Globe2 className="w-6 h-6 text-primary" />}
+              title="AI-Assisted Emissions Analysis"
+              description="CarbonPilot analyzes emissions data to identify patterns, highlight emission hotspots, and surface potential reduction opportunities based on activity data."
+              delay={0.6}
+            />
+            <FeatureCard 
               icon={<FileUp className="w-6 h-6 text-primary" />}
               title="Data Import via CSV"
               description="Upload activity data from spreadsheets or exported operational systems."
-              delay={0.6}
+              delay={0.7}
             />
             <FeatureCard 
               icon={<FileText className="w-6 h-6 text-primary" />}
               title="Automated Reports"
               description="Generate structured carbon footprint reports ready for ESG disclosures."
-              delay={0.7}
+              delay={0.8}
             />
             <FeatureCard 
               icon={<Lock className="w-6 h-6 text-primary" />}
               title="Audit-Ready Factor Traceability"
               description="Every emission factor used in calculations is recorded and traceable for reporting."
-              delay={0.8}
+              delay={0.9}
             />
           </div>
         </div>
@@ -350,42 +444,40 @@ export default function Landing() {
       <section className="py-24 bg-secondary/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">How CarbonOps fits into your workflow</h2>
-            <p className="text-lg text-muted-foreground">Carbon accounting should be straightforward. CarbonOps organizes the process from data collection to reporting in a structured workflow.</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">How CarbonPilot fits into your workflow</h2>
+            <p className="text-lg text-muted-foreground">A simple process from data collection to reduction planning.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-            <WorkflowStep 
-              number={1}
-              title="Collect activity data"
-              description="Upload energy, fuel, travel, and procurement data from spreadsheets or operational systems."
-              delay={0.1}
-            />
-            <WorkflowStep 
-              number={2}
-              title="Emission factors"
-              description="The platform automatically applies emission factors based on region, category, and reporting year."
-              delay={0.2}
-            />
-            <WorkflowStep 
-              number={3}
-              title="Calculate emissions"
-              description="Generate Scope 1, Scope 2, and Scope 3 emissions aligned with GHG Protocol."
-              delay={0.3}
-            />
-            <WorkflowStep 
-              number={4}
-              title="Generate reports"
-              description="Create structured carbon footprint reports ready for sustainability reporting and client delivery."
-              delay={0.4}
-            />
-            <WorkflowStep 
-              number={5}
-              title="Identify opportunities"
-              description="Understand emission hotspots and explore decarbonisation opportunities."
-              delay={0.5}
-            />
-          </div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeIn}
+            className="rounded-2xl border border-border bg-card p-6 md:p-8"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-2 items-center">
+              {[
+                { icon: <FileUp className="w-5 h-5 text-primary" />, label: "Collect activity data" },
+                { icon: <Zap className="w-5 h-5 text-primary" />, label: "Apply emission factors" },
+                { icon: <Calculator className="w-5 h-5 text-primary" />, label: "Calculate emissions" },
+                { icon: <FileText className="w-5 h-5 text-primary" />, label: "Generate reports" },
+                { icon: <TrendingUp className="w-5 h-5 text-primary" />, label: "Identify opportunities" },
+              ].map((step, index) => (
+                <div key={step.label} className="relative flex items-center gap-3 md:flex-col md:text-center md:gap-2">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center flex-shrink-0">
+                    {step.icon}
+                  </div>
+                  <p className="text-sm font-medium text-foreground">{step.label}</p>
+                  {index < 4 && (
+                    <ArrowRight className="hidden md:block w-4 h-4 text-muted-foreground absolute translate-x-[8.5rem]" />
+                  )}
+                </div>
+              ))}
+            </div>
+            <p className="text-xs text-muted-foreground text-center mt-5">
+              Collect activity data → Apply emission factors → Calculate emissions → Generate reports → Identify opportunities
+            </p>
+          </motion.div>
         </div>
       </section>
 
@@ -394,7 +486,30 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">From measurement to decarbonisation</h2>
-            <p className="text-lg text-muted-foreground">Once emissions are measured, the platform helps identify reduction opportunities.</p>
+            <p className="text-lg text-muted-foreground">Once emissions are measured, CarbonPilot highlights hotspots and helps identify where reductions may have the most impact.</p>
+          </div>
+
+          <div className="max-w-3xl mx-auto mb-12">
+            <Card className="border-border/60 shadow-sm">
+              <CardContent className="pt-6">
+                <h4 className="text-sm font-semibold text-foreground mb-4">Example hotspot breakdown</h4>
+                <div className="space-y-3">
+                  {[
+                    { label: "Energy", width: "72%", value: "72 tCO2e" },
+                    { label: "Travel", width: "46%", value: "46 tCO2e" },
+                    { label: "Procurement", width: "61%", value: "61 tCO2e" },
+                  ].map((item) => (
+                    <div key={item.label} className="grid grid-cols-[110px_1fr_80px] items-center gap-3 text-sm">
+                      <span className="text-muted-foreground">{item.label}</span>
+                      <div className="h-2.5 rounded-full bg-muted overflow-hidden">
+                        <div className="h-full bg-primary/70 rounded-full" style={{ width: item.width }}></div>
+                      </div>
+                      <span className="text-foreground font-medium text-right">{item.value}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -440,7 +555,7 @@ export default function Landing() {
               Built by Neucem
             </motion.h3>
             <motion.p variants={fadeIn} className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              CarbonOps is developed by the engineering team at Neucem, an AI and software solutions company focused on building scalable digital platforms. The platform combines carbon accounting workflows with modern software infrastructure to simplify emissions tracking and reporting.
+              CarbonPilot is developed by Neucem to help teams run carbon accounting in a structured, scalable way.
             </motion.p>
           </motion.div>
         </div>
@@ -490,7 +605,7 @@ export default function Landing() {
               Join early access
             </h2>
             <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
-              CarbonOps is currently being developed. Early users help shape the product and get access before the full launch. If you're a consultant or company ready to simplify your carbon accounting, join the waitlist.
+              CarbonPilot is currently being developed. Early users help shape the product and get access before the full launch. If you're a consultant or company ready to simplify your carbon accounting, join the waitlist.
             </p>
 
             <WaitlistForm />
@@ -514,37 +629,15 @@ export default function Landing() {
       <footer className="bg-foreground py-12 text-center text-background/60">
         <div className="flex items-center justify-center gap-2 mb-4">
           <Leaf className="w-5 h-5 text-primary" />
-          <span className="font-display font-bold text-xl text-background">CarbonOps</span>
+          <span className="font-display font-bold text-xl text-background">CarbonPilot</span>
         </div>
-        <p>© {new Date().getFullYear()} CarbonOps. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} CarbonPilot. All rights reserved.</p>
       </footer>
     </div>
   );
 }
 
 // Sub-components
-
-function WorkflowStep({ number, title, description, delay }: { number: number, title: string, description: string, delay: number }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.5, delay }}
-      className="relative"
-    >
-      <div className="bg-card border border-border rounded-2xl p-6 h-full">
-        <div className="flex items-center gap-4 mb-4">
-          <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold font-display flex-shrink-0">
-            {number}
-          </div>
-          <h3 className="text-lg font-bold font-display text-foreground">{title}</h3>
-        </div>
-        <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
-      </div>
-    </motion.div>
-  );
-}
 
 function FeatureCard({ icon, title, description, delay }: { icon: React.ReactNode, title: string, description: string, delay: number }) {
   return (

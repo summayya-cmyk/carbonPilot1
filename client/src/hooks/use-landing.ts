@@ -31,7 +31,7 @@ export function useJoinWaitlist() {
     onSuccess: () => {
       toast({
         title: "You're on the list!",
-        description: "We'll notify you when CarbonOps is ready for early access.",
+        description: "We'll notify you when CarbonPilot is ready for early access.",
       });
     },
     onError: (error) => {
